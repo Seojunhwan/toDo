@@ -13,7 +13,7 @@ const FINISHED_LS = "FINISHED";
 let pendingToDos = [];
 let finToDos = [];
 
-//! Delete Section !//
+//*Move Section *//
 const undoFinished = (event) => {
   const btn = event.target;
   const li = btn.parentNode;
@@ -47,7 +47,9 @@ const moveFinishToDo = (event) => {
   pendingToDos = cleanToDos;
   savePendings();
 };
+//*Move Section *//
 
+//! Delete Section !//
 const deletePendingToDo = (event) => {
   const btn = event.target;
   const li = btn.parentNode;
