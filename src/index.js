@@ -115,8 +115,8 @@ const paintPending = (text) => {
   delBtn.addEventListener("click", deletePendingToDo);
   span.innerText = text;
   li.appendChild(span);
-  li.appendChild(delBtn);
   li.appendChild(finBtn);
+  li.appendChild(delBtn);
   li.id = newId;
   pendingList.appendChild(li);
   const toDoObj = {
@@ -141,8 +141,8 @@ const paintFinished = (text, id) => {
   undoBtn.addEventListener("click", undoFinished);
   span.innerText = text;
   li.appendChild(span);
-  li.appendChild(delBtn);
   li.appendChild(undoBtn);
+  li.appendChild(delBtn);
   li.id = id;
   finishedList.appendChild(li);
   const toDoObj = {

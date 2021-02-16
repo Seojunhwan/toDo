@@ -31,13 +31,13 @@ li span {
 li {
   transition: box-shadow 0.2s ease-in-out;
   display: flex;
+  width: 100%;
   justify-content: center;
   align-items: center;
   padding: 10px;
   border-radius: 10px;
 }
 li:hover {
-  width: 100%;
   box-shadow: 0px 1px 5px -3px black;
 }
 .todo-input {
@@ -98,4 +98,11 @@ li:hover {
 }
 .undo-btn:hover {
   background-color: #b8bfc2;
+}
+
+.hide {
+  display: none;
+}
+.active {
+  display: inline-block;
 }
